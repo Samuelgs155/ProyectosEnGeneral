@@ -13,6 +13,8 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.html.*;
 
+import com.java.hilos.multichat.video.WebBrowserBasedOnJEditorPane;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -300,6 +302,7 @@ public class ClientGui extends Thread{
               }
             }else{
               appendToPane(jtextFilDiscu, message);
+              
             }
           }
         }
