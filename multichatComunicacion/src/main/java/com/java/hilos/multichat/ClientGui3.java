@@ -21,7 +21,7 @@ import java.util.Arrays;
  * @author samuel.garcia
  *
  */
-public class ClientGui2 extends Thread{
+public class ClientGui3 extends Thread{
 
   final JTextPane jtextFilDiscu = new JTextPane();
   final JTextPane jtextListUsers = new JTextPane();
@@ -35,7 +35,7 @@ public class ClientGui2 extends Thread{
   PrintWriter output;
   Socket server;
 
-  public ClientGui2() {
+  public ClientGui3() {
     this.serverName = "localhost";
     this.PORT = 12345;
     this.name = "nickname";
@@ -152,12 +152,12 @@ public class ClientGui2 extends Thread{
 
     // info sur le Chat
     appendToPane(jtextFilDiscu, "<h4>Los posibles comandos en el chat son:</h4>"
-    		+"<ul>"
-            +"<li><b>@nickname</b> enviar un mensaje privado al usuario 'nickname'</li>"
-            +"<li><b>#d3961b</b> para cambiar el color de tu apodo al código hexadecimal indicado</li>"
-            +"<li><b>;)</b> algunas caritas son implementadas</li>"
-            +"<li><b>flecha hacia arriba</b> para reanudar el último mensaje escrito</li>"
-            +"</ul><br/>");
+        +"<ul>"
+        +"<li><b>@nickname</b> enviar un mensaje privado al usuario 'nickname'</li>"
+        +"<li><b>#d3961b</b> para cambiar el color de tu apodo al código hexadecimal indicado</li>"
+        +"<li><b>;)</b> algunas caritas son implementadas</li>"
+        +"<li><b>flecha hacia arriba</b> para reanudar el último mensaje escrito</li>"
+        +"</ul><br/>");
 
     // On connect
     jcbtn.addActionListener(new ActionListener() {
@@ -282,7 +282,7 @@ public class ClientGui2 extends Thread{
   }
 
   public static void main(String[] args) throws Exception {
-    ClientGui2 client = new ClientGui2();
+    ClientGui3 client = new ClientGui3();
   }
 
   // read new incoming messages

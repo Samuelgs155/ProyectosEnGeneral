@@ -148,12 +148,12 @@ public class ClientGui extends Thread{
 
     // info sur le Chat
     appendToPane(jtextFilDiscu, "<h4>Les commandes possibles dans le chat sont:</h4>"
-        +"<ul>"
-        +"<li><b>@nickname</b> pour envoyer un Message privé à l'utilisateur 'nickname'</li>"
-        +"<li><b>#d3961b</b> pour changer la couleur de son pseudo au code hexadécimal indiquer</li>"
-        +"<li><b>;)</b> quelques smileys sont implémentés</li>"
-        +"<li><b>flèche du haut</b> pour reprendre le dernier message tapé</li>"
-        +"</ul><br/>");
+    		+"<ul>"
+            +"<li><b>@nickname</b> enviar un mensaje privado al usuario 'nickname'</li>"
+            +"<li><b>#d3961b</b> para cambiar el color de tu apodo al código hexadecimal indicado</li>"
+            +"<li><b>;)</b> algunas caritas son implementadas</li>"
+            +"<li><b>flecha hacia arriba</b> para reanudar el último mensaje escrito</li>"
+            +"</ul><br/>");
 
     // On connect
     jcbtn.addActionListener(new ActionListener() {
