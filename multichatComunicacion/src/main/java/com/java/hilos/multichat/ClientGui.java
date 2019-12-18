@@ -147,7 +147,7 @@ public class ClientGui extends Thread{
 
 
     // info sur le Chat
-    appendToPane(jtextFilDiscu, "<h4>Les commandes possibles dans le chat sont:</h4>"
+    appendToPane(jtextFilDiscu, "<h4>Los posibles comandos en el chat son:</h4>"
     		+"<ul>"
             +"<li><b>@nickname</b> enviar un mensaje privado al usuario 'nickname'</li>"
             +"<li><b>#d3961b</b> para cambiar el color de tu apodo al código hexadecimal indicado</li>"
